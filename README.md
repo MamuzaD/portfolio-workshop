@@ -12,9 +12,9 @@
 During the workshop, we covered the following topics:
 
 - **HTML Basics:** Semantic HTML elements (header, nav, main, section, etc.), structure of webpages, element tags (opening/closing/void), common elements (h1-h6, p, a, br, img), divs & containers, and nesting concepts.
-- **CSS Fundamentals:** Selectors (element, class, id), box model (content, padding, border, margin), layouts including block elements and Flexbox. We introduced CSS Grid but didn't have time for animations and variables.
+- **CSS Fundamentals:** Selectors (element, class, id), box model (content, padding, border, margin), layouts including block elements and Flexbox. Didn't get to discuss grid, animations, or CSS variables.
 - **Development Tools:** VSCode with extensions like Live Server for real-time previewing of changes.
-- **Version Control with Git and GitHub:** BConnecting local repositories to remote GitHub repositories via VSCode. Did not go over basics of Git Commands (due to audience's previous experience).
+- **Version Control with Git and GitHub:** Connecting local repositories to remote GitHub repositories via VSCode. Did not go over basics of Git Commands (due to audience's previous experience).
 - **Deployment:** Setting up static site deployment using GitHub Pages to make your portfolio accessible online.
 
 ## Available Templates
