@@ -59,6 +59,20 @@ Each template folder contains everything you need to get started:
 
 Simply edit the files to customize with your own information, projects, and styling.
 
+## GitHub Pages Deployment
+Deploying your portfolio on GitHub Pages is a straightforward process:
+
+1. Go to your repository on GitHub
+2. Click on "Settings" in the top navigation bar
+3. Scroll down to the "Pages" section in the left sidebar
+4. Under "Build and deployment" > "Source", select "Deploy from a branch"
+5. Select the branch you want to deploy (usually "main" or "master")
+6. Select the folder (usually "/(root)" if your files are in the main directory)
+7. Click "Save"
+
+- GitHub will process your request and deploy your static site. 
+- Once complete, you'll see a message with the URL where your site is published (typically https://yourusername.github.io/repositoryname/).
+- Any future changes you push to the selected branch will automatically trigger a new deployment, keeping your portfolio up to date.
 
 ## [Slides from Workshop](https://docs.google.com/presentation/d/1ywRE4bL6pDGbXeCN9mEZJCVNRUao2lCn3lC6rSUe8T8/edit?usp=sharing)
 Click on the link above for the content from the workshop itself :)
