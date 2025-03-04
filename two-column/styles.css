@@ -1,0 +1,163 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 40px; /* Space at the top when scrolling to an anchor */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+nav ul li a {
+  font-size: 1.25rem;
+  color: #555;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.left-column {
+  width: 30%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 20px;
+  max-height: 55vh;
+  height: auto;
+}
+
+.left-column .profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: black;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left-column h2 {
+  color: #333;
+  text-align: center;
+}
+
+.left-column p {
+  color: #555;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.right-column {
+  width: 65%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-column h2,
+.right-column strong {
+  color: #333;
+  margin-top: 0;
+}
+
+.right-column h2::after {
+  content: "";
+  display: block;
+  width: 95%;
+  height: 1px;
+  background-color: #9b9b9b;
+  margin-top: 2px;
+}
+
+.right-column p,
+.right-column li {
+  color: #555;
+  line-height: 1.6;
+}
+
+.right-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.right-column ul li {
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #6d6c6cbe;
+  color: white;
+  position: relative;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .left-column {
+    position: static;
+    width: 85%;
+    height: 100%; /* adjust height to fit content */
+  }
+  .right-column {
+    width: 85%;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+}
+
+.bottom {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  background-color: #6d6d6d;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.bottom a {
+  color: white;
+  text-decoration: none;
+}
+
+.bottom:hover {
+  transform: scale(1.05);
+}

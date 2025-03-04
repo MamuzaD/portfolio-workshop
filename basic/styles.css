@@ -1,0 +1,297 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #302b2b;
+}
+
+ul {
+  padding: 0;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.margin {
+  margin: 0 3rem;
+}
+
+.max-width {
+  max-width: 850px;
+  align-items: start;
+}
+
+/* Header */
+#main-header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 5rem;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  height: 5rem;
+  z-index: 999;
+}
+
+#nav-title {
+  color: white;
+  text-decoration: none;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main-nav .nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link img {
+  filter: invert(1); /* just to make black images -> white */
+}
+
+.nav-link:hover {
+  text-underline-offset: 4px;
+  text-decoration: underline;
+}
+
+.nav-link.icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  transition: transform 150ms ease-in-out;
+}
+
+.nav-link.icon:hover {
+  transform: scale(1.2);
+}
+
+.nav-link.icon svg {
+  height: 100%;
+  width: 100%;
+}
+
+/* Hero */
+#hero {
+  margin-top: 2rem;
+  gap: 4rem;
+  min-height: 70vh;
+  border-bottom: 1px #858585 solid;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+#about-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.profile-image {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  background-color: black;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer Styling */
+#main-footer {
+  margin-top: 1rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-text {
+  margin: 0;
+}
+
+/* Projects */
+#projects {
+  max-width: 1200px;
+  background-color: #8d8c8c5b;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+  padding: 0;
+  max-width: 750px;
+  max-height: 60vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  gap: 1rem;
+}
+
+.projects-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.projects-list::-webkit-scrollbar-thumb {
+  background: #6d6d6d;
+  border-radius: 2rem;
+}
+
+.projects-list li {
+  scroll-snap-align: start;
+  background-color: #f0f0f0;
+  padding: 1rem 1rem;
+  border-radius: 0.75rem;
+  height: 100%;
+  max-width: 100%;
+  margin: 0.5rem 1rem;
+}
+
+.projects-list li img {
+  margin: 0 auto;
+  max-height: 65%;
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+}
+
+.project-card {
+  background-color: #f0f0f0;
+  padding: 1rem 1rem;
+  border-radius: 0.75rem;
+  height: 100%;
+  max-width: 100%;
+  margin: 0.5rem 1rem;
+  display: flex;
+  gap: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.project-card img {
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Skills */
+#skills {
+  margin-top: 2rem;
+  max-width: 1200px;
+  background-color: #8d8c8c5b;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.skill-list {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  max-width: 750px;
+
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+}
+
+.skill-icon {
+  height: 4rem;
+  width: 4rem;
+}
+
+.bottom:hover {
+  transform: scale(1.05);
+}
+
+#about section.flex-center {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+#about section.flex-center > div:first-child {
+  flex: 1;
+}
+
+#about section.flex-center > div:first-child h1 {
+  margin: 0;
+}
+
+#about section.flex-center > div:last-child {
+  flex: 3;
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+  }
+
+  #about section {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* Just portfolio switcher, may remove */
+.bottom {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  background-color: #6d6d6d;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bottom a {
+  color: white;
+  text-decoration: none;
+}
+
+.bottom:hover {
+  transform: scale(1.05);
+}
