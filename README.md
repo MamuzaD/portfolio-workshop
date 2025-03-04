@@ -5,6 +5,8 @@
 ![CSS3 Badge](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff&style=for-the-badge)
 ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
 
+
+### [Live preview](https://mamuzad.github.io/portfolio-workshop/) 🔗
 ## Workshop Overview
 
 During the workshop, we covered the following topics:
